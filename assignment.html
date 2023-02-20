@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <style>
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(237, 237, 237);
+    cursor: pointer;
+    /* transition: 0.8s;
+    color: grey;
+    position: relative;
+    overflow: hidden; */
+}
+
+
+
+
+nav{
+    background-color: grey;
+    color: white;
+    display: flex;
+    padding-bottom: 40px;
+    width: 100%;
+    justify-content: space-between;
+    bottom: 300px;
+
+}
+
+/* nav:hover{    
+            background-color: red;
+            color: yellow;
+            transform: rotate();
+        } */
+
+
+li{
+    display: inline;
+    padding: 15px;
+    font-size: small;
+}
+
+li:hover{
+    background-color: black;
+            color: yellow;
+            transform: rotate();
+}
+
+h4{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+h4:hover{
+    background-color: black;
+            color: yellow;
+            transform: rotate();
+}
+
+.black{
+    padding: 0%;
+    margin: 0%;
+    background-color: black;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    color: white;
+    align-items: center;
+    text-align: center;  
+    
+}
+
+.blackone{
+    height: 200px;
+    width: 225px;
+    background-color: black;
+    margin: 1px;
+    text-align: center;  
+    justify-content: space-around;
+    margin: 20px;
+     
+
+    
+}
+.blackone:hover{
+    background-color: black;
+            color: yellow;
+            transform: rotate();
+}
+.category{
+    
+   margin-left: 40%;
+}
+.category:hover{
+    background-color: black;
+            color: yellow;
+            transform: rotate();
+}
+
+.tiny{
+    height: 30px;
+    width: 80% ;
+    background-color: rgb(240, 231, 231);
+    border: solid rgb(240, 231, 231);
+    border-radius: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+
+}
+
+.fourpics{
+display: flex;
+width: 80%;
+height: 300px;
+justify-content: space-between;
+margin: 50px 100px;
+margin-bottom: 3px;
+}
+
+    
+            
+
+.firstpic{
+    height: 300px;
+    width: 200px;
+    background-color:white;
+    justify-content: space-around;
+    border-radius: 11%;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+.firstpic:hover{
+    color: yellow;
+    transform: rotateX('30deg');
+}
+
+.main_box {
+    width: 80%;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(237, 237, 237);
+    margin: 70px 10%;
+    align-items: center;
+    /* margin-top: 2px; */
+    position: absolute;
+    top: 1300px;
+
+    
+}
+
+.boxxx {
+    position: relative;
+    background-color:rgb(237, 237, 237);
+    width: 500px;
+    height: 400px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.broo {
+    height: 150px;
+    width: 150px;
+    background-color: rgb(237, 237, 237);
+    border-top-right-radius: 13%;
+    border-top-left-radius: 4%;
+    border-bottom-left-radius: 15%;
+}
+
+.boxex1 {
+    position: absolute;
+    top: -50px;
+    left: 50px;
+    background-color:rgba(230, 227, 227, 0.986);
+
+}
+.boxex2 {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    background-color: rgba(230, 227, 227, 0.986);
+}
+.boxex3 {
+    position: absolute;
+    top: 50px;
+    right: 90px;
+    background-color: rgba(230, 227, 227, 0.986);
+}
+.boxex4 {
+    position: absolute;
+    bottom: 30px;
+    right: 150px;
+    background-color: rgba(230, 227, 227, 0.986);
+}
+
+button{
+    background-color: black;
+    color: white;
+    border-radius: 11%;
+}
+
+.section{
+    background-color:rgb(237, 237, 237);
+    width:100%;
+    height:100px ;
+    position: absolute;
+    bottom: -120px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+
+    
+}
+
+.txttt{
+    height: 320px;
+    width: 280px;
+    background-color: rgb(237, 237, 237);
+    margin-top: -7px;
+}
+
+.txtt{
+    height: 300px;
+    width: 150px;
+    background-color: rgb(237, 237, 237);
+    
+    
+    
+}
+
+.image{
+    background-color:rgb(237, 237, 237);
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    bottom: -800px;
+    justify-content: center;
+    justify-content: space-around;
+    
+
+
+}
+
+@media screen and(max-width: 600px){
+    body{
+    background-color: yellowgreen;
+    display: block;
+}
+    .boxxx{
+        display: none;
+    }
+
+    
+}
+
+
+/* h6{
+    position: relative;
+    left: 410px;
+} */
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">KARH</div>
+        <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>team</li>
+            <li>team</li>
+            <li>team</li>
+            <li>contact</li>
+            <li><input type="text"placeholder=search>
+           </ul>
+
+    </nav>
+    <div class="one">
+        <h4>Your best online furniture <br> & Interior design Services</h4>
+        <div class="pic"><img style="height: 500px;width: 100%;" src="interior.jpg" alt=""></div>
+        
+
+ </div>
+ <div class="black">
+    <div class="blackone"><h2>Our range <br> of products</h2></div>
+    <div class="blackone"><h3>Home Furniture</h3><h5>Lorem ipsum dolor sit amet, consectetur adipisicing <br> Neque delectus ad assumenda explicabo? Ad,<br> atque praesentium distinctio <br> blanditiis perferendis qui minus.</h5></div>
+    <div class="blackone"><h3>Office Furniture</h3><h5>Lorem ipsum dolor sit amet, consectetur adipisicing <br> Neque delectus ad assumenda explicabo? Ad,<br> atque praesentium distinctio <br> blanditiis perferendis qui minus.</h5></div>
+    <div class="blackone"><h3>Ideal Furniture</h3><h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae suscipit <br> sed quaerat? Sequi esse corrupti quaerat molestias <br> quo facere commodi pariatur <br> nihil ipsam minima nisi, illum quas fuga maxime quisquam.</div>
+ </div>
+ <br>
+ <br>
+ <div class="category"><h2><p>Best selling category</p></h2></div>
+
+ 
+ 
+
+ <div class="tiny">
+    <h6 >Lorem ipsum dolor sit amet,       consectetur adipisicing elit.      Iure, odio deserunt.          hhhghghghgghgh</h6>
+  
+       <div class="fourpics">
+        <div class="firstpic"><img src="lamp.jpg" alt=""height="300px"; width="200px";border-radius="11%";></div>
+        <div class="firstpic"><img src="chairtwo.jpg" alt=""height="300px"; width="200px";></div>
+        <div class="firstpic"><img src="germanchair.webp" alt=""height="300px"; width="200px";></div>
+        <div class="firstpic"><img src="germanoffice.jpg" alt=""height="300px"; width="200px"></div>
+       </div> 
+
+    </div>
+
+
+    <div class="main_box">
+        <div class="textss"><h3>Lorem, ipsum dolor </h3><h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Obcaecati numquam fugit expedita repellat? Commodi,<br> fugit.</h6><br><button>shop now</button></div>
+        <div class="boxxx">
+            <div class="boxex1 broo"><h5>Lorem ipsum,</h5><br><h6>Lorem ipsum dolor sit amet <br> <br> consectetur ad <br> ipisicing elit. <br>b djdsjsjsjsjhfjdsksk</h6></div>
+            <div class="boxex2 broo"><h5>Lorem ipsum,</h5><h6>Lorem ipsum dolor sit amet <br> <br> consectetur ad <br> ipisicing elit. <br>b djdsjsjsjsjhfjdsksk</h6></div>
+            <div class="boxex3 broo"><h5>Lorem ipsum,</h5><h6>Lorem ipsum dolor sit amet <br> <br> consectetur ad <br> ipisicing elit. <br>b djdsjsjsjsjhfjdsksk</h6></div>
+            <div class="boxex4 broo"><h5>Lorem ipsum,</h5><h6>Lorem ipsum dolor sit amet <br> <br> consectetur ad <br> ipisicing elit. <br>b djdsjsjsjsjhfjdsksk</h6></div>
+
+
+            
+        </div>
+       
+
+            
+
+
+        <div class="section">
+            <div class="txttt">
+                <h3>We provide you with the <br> best experience</h3>
+                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>  Eaque nisi est  eligendi unde repellat distinctio animi! Debitis consectetur <br> excepturi </h6>
+                <br>
+                <button style="background-color: black;color: white;">shop now</button>
+            </div>
+            <div class="txtt"><h6>Lorem ipsum dolor <br> sit amet consectetur <br></h6><br><b><h4>10+</h4></b></div>
+            <div class="txtt"><h6>Lorem ipsum dolor <br> sit amet consectetur <br></h6><br><b><h4>18+</h4></b></div>
+            <div class="txtt"><h6>Lorem ipsum dolor <br> sit amet consectetur <br></h6><br><b><h4>365+</h4></b></div>
+        </div> 
+
+
+        <div class="image"><img src="sofa-removebg-preview.png" alt="" height="400px" width="100%"></div>
+</body>
+</html>
