@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .box{
+            height: 90vh;
+            background-color: red;
+            display: grid;
+            place-content: center;
+            gap: 15px;
+
+
+        }
+
+        input,button{
+            outline: none;
+            border: none;
+            border-radius: 15px;
+            padding: 10px;
+
+        }
+
+        input:focus{
+            background-color: greenyellow;
+        }
+
+        button:hover{
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Addition</h1>
+        <input type="text"id=one>
+        <input type="text"id="two">
+        <button>add</button>
+    </div>
+
+    <script>
+        head = document.querySelector("h1");
+        one = document.querySelector('#one');
+        two =document.querySelector("#two");
+        btn= document.querySelector("button")
+        btn.addEventListener("click",()=>{
+
+        value1= parseInt(one.value)
+        value2= parseInt(two.value)
+        add=value1 + value2
+        head.innerHTML = add
+    })
+
+    </script>
+
+    
+</body>
+</html>

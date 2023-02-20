@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background-color: red;
+            height: 90vh;
+            display: grid;
+            place-content: center;
+            gap: 15px;
+
+        }
+
+        input{
+            outline: none;
+            border: none;
+            border-radius: 20px;
+            padding: 10px;
+
+        }
+
+        input:focus{
+            background-color: aqua;
+
+        }
+
+        button:hover{
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <input type="text" id="one">
+        <button>change colour</button>
+    </div>
+    
+
+
+    <script>
+        box = document.querySelector(".box");
+        one = document.querySelector(".#one");
+        btn.oneclick = function name("button"){
+            value = one.value;
+            console.log(value)
+            box.style.backgrouncolor = "green"
+        }
+    </script>
+</body>
+</html>
